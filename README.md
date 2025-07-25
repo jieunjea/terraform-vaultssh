@@ -9,9 +9,16 @@ It allows users to connect to EC2 instances via SSH using Vault-issued OTPs.
 
 - **Terraform**: Used to provision AWS infrastructure and Vault configurations
 - **HashiCorp Vault OSS**: SSH secrets engine for one-time password-based SSH access
-- **vault-ssh-helper**: Enables PAM-based SSH login via Vault OTP
-- **Amazon EC2**: Target for SSH login
-- **AWS SSM**: (Optional) for secure parameter storage
+
+---
+
+## What This Terraform Configuration Deploys
+
+- A dedicated Vault namespace
+- An enabled and configured SSH Secrets Engine
+- A Vault SSH role for OTP access
+- An EC2 instance as the SSH target
+- `vault-ssh-helper` installed and configured via user data
 
 ---
 
