@@ -16,5 +16,9 @@ It allows users to connect to EC2 instances via SSH using Vault-issued OTPs.
 ---
 
 ## Architecture Overview
+### Terraform Architecture
+
 ### Vault Workflow
 <img width="882" height="316" alt="image" src="https://github.com/user-attachments/assets/afa6c5bb-486f-446f-9b79-53b24f3fb27f" />
+"Why OTP-based SSH?"
+This approach eliminates the need to manage persistent SSH keys and provides time-limited, auditable access to critical infrastructure.
