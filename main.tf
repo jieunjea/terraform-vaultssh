@@ -21,7 +21,7 @@ resource "aws_instance" "ec2_instance" {
   key_name                    = var.prefix
   associate_public_ip_address = true
   vpc_security_group_ids      = [data.aws_security_group.vault.id]
-  user_data = templatefile("file/userdata.sh", {
+  user_data = templatefile("userdata.sh", {
   VAULT_ADDR      = var.VAULT_ADDR,
 })
 
