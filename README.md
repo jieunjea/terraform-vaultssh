@@ -12,6 +12,6 @@ By integrating Vault's secrets management with SSH authentication, it enables **
 
 ## Prerequisites
 - An AWS account with permissions for EC2, IAM, and VPC resources
-- Access to a **HashiCorp Vault Enterprise** server (address and token required)
-- Terraform installed locally (**v1.0+ recommended**)
+- Access to a HashiCorp Vault server (address and token required)
+- Terraform installed locally
 - Basic understanding of Vault policies and SSH authentication
